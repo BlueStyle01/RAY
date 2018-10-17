@@ -1,0 +1,132 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+body{
+  line-height: 1.6;
+}
+.descripcion{
+  color: #777;
+  background-color:white;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+.titulo{
+  text-align:center;
+}
+.img1, .img2 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.img1 {
+  background-image: url("https://ep01.epimg.net/cultura/imagenes/2018/04/27/actualidad/1524847056_558076_1524848112_noticia_normal.jpg");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("http://santostour.net/wp-content/uploads/2017/09/bg_bosque.jpg");
+  min-height: 400px;
+}
+.img_perfil{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-left: 44%;
+  margin-right: 15px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.tarjeta_info1 {
+  position:relative;
+}
+
+.tarjeta_info1_1 {
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.container {
+  width: 100%;
+  min-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+
+}
+.container .card {
+  background-color: #52575C;
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.container .card h4 {
+  font-weight: 600px;
+}
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300px;
+}
+
+.container .card a {
+  font-weight: 500px;
+  text-decoration: none;
+  color: #3498db;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .img1, .img2 {
+        background-attachment: scroll;
+    }
+}
