@@ -1,4 +1,4 @@
-console.log("Cargando juego");
+console.log("Cargando juegos");
 
 /*
  *
@@ -31,8 +31,8 @@ var ball = {
 	currentX : 20,
 	currentY : 40,
 
-	moveX : 5,
-	moveY : -5,
+	moveX : 7,
+	moveY : -7,
 }
 
 var paddle = {
@@ -62,7 +62,7 @@ function draw_startMsg () {
 						 (config.game_canvas.height / 2) - 50, 
 						 200, 115);
 
-	config.game_ctx.fillStyle = "57C854";
+	config.game_ctx.fillStyle = "#57C854";
 	config.game_ctx.fill();
 	config.game_ctx.closePath();
 
@@ -88,7 +88,7 @@ function draw_pauseMsg () {
 						 (config.game_canvas.height / 2) - 50, 
 						 200, 100);
 
-	config.game_ctx.fillStyle = "57C854";
+	config.game_ctx.fillStyle = "#57C854";
 	config.game_ctx.fill();
 	config.game_ctx.closePath();
 
@@ -102,7 +102,7 @@ function draw_pauseMsg () {
 function draw_ball () {
 	config.game_ctx.beginPath();
 	config.game_ctx.arc(ball.currentX, ball.currentY, ball.radious, 0, Math.PI*2);
-	config.game_ctx.fillStyle = "57C854";
+	config.game_ctx.fillStyle = "#3C8C3A";
 	config.game_ctx.fill();
 	config.game_ctx.closePath();
 }
@@ -112,7 +112,7 @@ function draw_paddle () {
 
 	config.game_ctx.rect(paddle.currentX, (config.game_canvas.height - paddle.height), paddle.width, paddle.height);
 
-	config.game_ctx.fillStyle = "#57C854";
+	config.game_ctx.fillStyle = "#3C8C3A";
 	config.game_ctx.fill();
 	config.game_ctx.closePath();
 }
@@ -167,7 +167,7 @@ function check_bricks_collisions () {
 					user.score++;
 					if(user.score == (brick.RowCount * brick.ColumnCount)) {
 						config.game_state = 3;
-						alert("¡Felicidades! YOU WIN!");
+						alert("¡Felicidades! Ha ganado");
 						reload ();
 						//document.location.reload();
 					}
@@ -197,7 +197,7 @@ function check_wall_collisions () {
 		} else {
 			user.lives--;
 			if(!(user.lives)) {
-				alert("¡Haz perdido la partida!");
+				alert("Ha perdido la partida");
 				reload ();
 				//document.location.reload();
 			} else {
@@ -218,7 +218,7 @@ function check_wall_collisions () {
 				draw_lives();
 				draw_pauseMsg ();
 				
-				alert("¡Haz perdido una vida :(!");
+				alert("Pierde una vida");
 			}
 		}
 	}

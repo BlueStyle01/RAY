@@ -2,7 +2,7 @@
 section#game-section {
     width: 500px;
     height:380px;
-    background-color: #57C854;
+    background-color: #5457C8;
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
@@ -22,7 +22,7 @@ div#gameBackground {
 canvas#gameCanvas {
     width: 480px;
     height:320px;
-    background-image: url("../resources/image/bricks-background.jpg");
+    background-image: url("../resources/image/cloudx-background.jpg");
     position: relative;
     top:10px;
     display: block;
@@ -33,7 +33,7 @@ canvas#gameCanvas {
 div#gameButtonsSec {
     width: 480px;
     height:30px;
-    background-color: #57C854;
+    background-color: #5457C8;
     position: relative;
     margin: auto;
     top: 20px;
@@ -41,17 +41,9 @@ div#gameButtonsSec {
 }
 
 button#startButton {
-    width: 356px;
+    width: 480px;
     height:30px;
-    background-color: #3C8C3A;
+    background-color: #3C3E90;
     margin-right: 10px;
-     z-index: 3;
-}
-
-button#reloadButton {
-    width: 100px;
-    height:30px;
-    background-color: #3C8C3A;
-    margin-left: 10px;
      z-index: 3;
 }
